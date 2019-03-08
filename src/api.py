@@ -20,7 +20,7 @@ app = Flask(__name__)
 api = Api()
 
 @app.route('/api/data')
-def hello_world():
+def api_data():
     res = api.process(request.args)
     return jsonify(res)
 
