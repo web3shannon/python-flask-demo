@@ -1,0 +1,8 @@
+{
+  "apps": [
+    {
+      "name": "python-flask-demo",
+      "script": "./config/pm2.sh"
+    }
+  ]
+}
