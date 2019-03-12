@@ -4,6 +4,7 @@
 ```
 pip3 install flask
 pip3 install gunicorn
+pip3 install Flask-Cors
 gunicorn -c config/config_development.py api:app
 ```
 
