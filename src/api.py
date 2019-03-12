@@ -5,6 +5,7 @@ http://127.0.0.1:18000/api/data?input=xxx
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
 from copy import copy
 
 class Api:
@@ -17,6 +18,7 @@ class Api:
         return res
 
 app = Flask(__name__)
+CORS(app, origins=['http://localhost:8080', 'https://api.qtumx.info'])
 api = Api()
 
 @app.route('/api/data')
